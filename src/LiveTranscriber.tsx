@@ -370,7 +370,7 @@ const LiveTranscriber: React.FC = () => {
 
       // Connect to backend WebSocket
       wsRef.current = new WebSocket(
-        "ws://transcription-backend-production-e460.up.railway.app/live-transcription"
+        "wss://transcription-backend-production-e460.up.railway.app/live-transcription"
       );
 
       wsRef.current.onopen = () => {
